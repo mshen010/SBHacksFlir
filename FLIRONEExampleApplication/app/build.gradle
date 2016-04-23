@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
 
     defaultConfig {
         applicationId "com.flir.flironeexampleapplication"
@@ -17,12 +17,20 @@ android {
         }
     }
 
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+
 }
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile(name:'flironesdk', ext:'aar')
-    compile 'com.android.support:appcompat-v7:22.0.0'
-    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.firebase:firebase-client-android:2.5.2+'
+
 }
 
 repositories{

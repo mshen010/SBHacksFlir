@@ -35,7 +35,6 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/battery_label"
                 android:id="@+id/batteryLabelTextView"
-                android:layout_margin="@dimen/abc_action_bar_default_padding_material"
                 android:layout_weight="0"
                 android:layout_gravity="left|center_vertical"
                 style="?actionMenuTextAppearance"/>
@@ -55,7 +54,6 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/batteryLevelTextView"
-                android:layout_margin="@dimen/abc_action_bar_default_padding_material"
                 android:layout_weight="0.48"
                 android:layout_gravity="left|center_vertical"
                 android:text="--" />

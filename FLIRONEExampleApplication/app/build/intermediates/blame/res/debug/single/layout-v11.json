@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\layout-v11\\abc_screen_content_include.xml"
+    },
+    {
         "merged": "C:\\Users\\Michaella\\Downloads\\FLIROneSDKBundle\\FLIRONEExampleApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\abc_screen_content_include.xml",
         "source": "C:\\Users\\Michaella\\Downloads\\FLIROneSDKBundle\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\layout-v11\\abc_screen_content_include.xml"
     }

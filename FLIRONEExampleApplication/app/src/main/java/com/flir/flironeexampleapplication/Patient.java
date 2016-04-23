@@ -6,6 +6,7 @@ package com.flir.flironeexampleapplication;
 public class Patient {
     private String name;
     private int age;
+    private int id;
 
     public Patient() {
 
@@ -19,6 +20,11 @@ public class Patient {
     public int getAge()
     {
         return age;
+    }
+
+    public int getId()
+    {
+        return id;
     }
 
 }

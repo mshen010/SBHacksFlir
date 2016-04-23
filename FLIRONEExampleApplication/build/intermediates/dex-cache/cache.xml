@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Michaella\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.0.0_9e71517c1a238aef3b3f1c575c492ea8577aa502\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\exploded-aar\flironesdk\jars\classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="b2ada72741cd162af06a68e653d481e34f8f0fd3">
+        <dex dex="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\intermediates-exploded-aar-flironesdk_e6bb37717e15986a9bb1f288207b12ad898e1373\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.0.0_686e5b596210f7616cad41853f36125b45a5616b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="705b9fbd644ad22469d9437c096397eaec37b4c9">
+        <dex dex="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d0dbd5ca237797572d1b44ca7cd9668bdd9c27df\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.0.0_cb53fbefcf891b1e7691015b20224622702020fa\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.0.0_61a221484e167de4ca7c4049dadbedad7d6ee51a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="f4adc4f806eec8671535f8bb788c0ac574ebdabc">
+        <dex dex="C:\Users\Michaella\Downloads\FLIROneSDKBundle\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_529521b2b6faf6c4ad6ba37bc1e388b5e3b09532\classes.dex" />
+    </item>
+
+</items>

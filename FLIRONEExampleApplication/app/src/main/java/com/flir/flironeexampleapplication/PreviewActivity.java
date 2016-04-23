@@ -29,7 +29,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.flir.flironesdk.Device;
@@ -258,7 +257,6 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
         */
         if (this.imageCaptureRequested) {
             imageCaptureRequested = false;
-            Toast.makeText(PreviewActivity.this, "Image captured", Toast.LENGTH_SHORT).show();
             final Context context = this;
             new Thread(new Runnable() {
                 public void run() {
@@ -334,7 +332,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                     }
                 }).start();
             } catch (Exception ex){
-                   Log.e("STREAM", "Error creating PNG: "+ex.getMessage());
+                Log.e("STREAM", "Error creating PNG: "+ex.getMessage());
 
             }
 

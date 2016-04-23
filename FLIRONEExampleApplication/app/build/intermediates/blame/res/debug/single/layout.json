@@ -36,12 +36,12 @@
         "source": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\emptytextview.xml",
-        "source": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\src\\main\\res\\layout\\emptytextview.xml"
-    },
-    {
         "merged": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
         "source": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\emptytextview.xml",
+        "source": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\src\\main\\res\\layout\\emptytextview.xml"
     },
     {
         "merged": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",

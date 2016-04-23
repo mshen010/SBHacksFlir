@@ -21,6 +21,7 @@ public class EditData extends AppCompatActivity {
     EditText nameText;
     EditText ageText;
     Button submitButton;
+    Button deleteButton;
 
 
 
@@ -50,6 +51,14 @@ public class EditData extends AppCompatActivity {
                 new_data.child("name").setValue(nameText.getText().toString());
                 new_data.child("age").setValue(ageText.getText().toString());
                 finish();
+            }
+        });
+
+        deleteButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Firebase rem_data = new Firebase("https://datatemp.firebase.io.com/patients/" + idText.getText().toString());
+                rem_data.setValue(null);
             }
         });
 

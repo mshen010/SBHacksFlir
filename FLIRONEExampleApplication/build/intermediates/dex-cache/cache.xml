@@ -1,3 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="af4c64d82b5fb8af9b2c14b68f1e2bd6d07f409a">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bdc2553de8dbcf47d43e37df2133a9f0cab6f37c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.5.2\f19f10d6276aa0b380e2d05d2ab3272d693a5433\firebase-client-android-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f19f10d6276aa0b380e2d05d2ab3272d693a5433">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-android-2.5.2_e212f0743479b7dfbdd1abbb2853ac8290e14077\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.2.2_cf7dcf209d76c380448ec7eb9b0b32d7e50048d2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.0.1_e533f16e1490c363055bf418eaf6df2ee4c30d77\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.0.1_2687be7e786fbc9097654249c0b3c66f12637371\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-annotations-2.2.2_359d87547ba0fa2e5fdb59e604d60bdf5924b53e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.0.1_379d0659ab24f3b3d5b1d3c5a586be152ac3b836\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="c55b047c0d6447f3eab73e79b98cfade9f0e77a7">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_5c4aa568b0bb7d3e1e3c236d673b61d1f0e29662\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.12\6ec0bbd3e161a73ed672284b587fd32309a86d7a\tubesock-0.0.12.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="6ec0bbd3e161a73ed672284b587fd32309a86d7a">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\tubesock-0.0.12_50a65eafb2cf96e42a530f336c13e25db961af20\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.2.2_ca41163c7436594c19d17893ed95a28951b8ecb9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.5.2\91731b8f5868a3e8a8a773f29b8d06b5c358f5bb\firebase-client-jvm-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="91731b8f5868a3e8a8a773f29b8d06b5c358f5bb">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.5.2_848441d5a772201e7a90b1043ab6c7afa6665f7c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.1_9837709adbd5cf004adfbaccb7f9d960df3ae325\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\exploded-aar\flironesdk\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="b2ada72741cd162af06a68e653d481e34f8f0fd3">
+        <dex dex="C:\Users\skill\OneDrive\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\intermediates-exploded-aar-flironesdk_41de1878978f68c09a26fcd51774fa71e88f6c87\classes.dex" />
+    </item>
+
+</items>

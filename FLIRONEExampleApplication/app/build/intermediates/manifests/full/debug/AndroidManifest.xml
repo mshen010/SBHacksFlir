@@ -42,13 +42,16 @@
         <activity android:name="com.flir.flironeexampleapplication.ViewData" >
         </activity>
         <activity android:name="com.flir.flironeexampleapplication.util.EditData" />
-        <activity android:name="com.flir.flironeexampleapplication.MenuActivity" >
+        <activity android:name="com.flir.flironeexampleapplication.Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.flir.flironeexampleapplication.MenuActivity" >
+        </activity>
+        <activity android:name="com.flir.flironeexampleapplication.SignUp" />
         <activity android:name="com.flir.flironeexampleapplication.NewPatientActivity" />
     </application>
 

@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
                         //TODO: Where you include the rules/storage for firebase data
 
                         //switches back to the menu activity
-                        Intent intent = new Intent(getApplicationContext(), PreviewActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
                         startActivity(intent);
 
                     }

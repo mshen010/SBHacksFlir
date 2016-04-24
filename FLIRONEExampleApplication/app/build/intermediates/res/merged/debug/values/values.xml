@@ -187,7 +187,6 @@
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
-    <string name="FLIRONEExampleApplication">MyAndroidApp</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -205,20 +204,8 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">TempEnsure</string>
-    <string name="battery_label">Batt:</string>
-    <string name="btn_submit">Submit</string>
-    <string name="change_view">Change View \u21EA</string>
-    <string name="change_view_retract">Change View \u21B2</string>
-    <string name="connectSim">Toggle Sim</string>
-    <string name="lblPassword">Enter Your Password :</string>
-    <string name="performTuning">Tune</string>
-    <string name="rotate_off">\u21BB</string>
-    <string name="rotate_on">\u21BA</string>
-    <string name="startNetStream">Stream</string>
+    <string name="app_name">FlirOneSDK</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="stopNetStream">Disconnect</string>
-    <string name="txtTuning">Tuning...</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

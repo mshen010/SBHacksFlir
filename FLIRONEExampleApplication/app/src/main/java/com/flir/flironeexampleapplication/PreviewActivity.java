@@ -5,6 +5,8 @@ import com.flir.flironeexampleapplication.util.SystemUiHider;
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
@@ -29,6 +31,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.flir.flironesdk.Device;
@@ -241,6 +244,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
 
         if (currentTuningState != Device.TuningState.InProgress){
             frameProcessor.processFrame(frame);
+
         }
     }
 
@@ -250,8 +254,44 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
     public void onFrameProcessed(final RenderedImage renderedImage){
         thermalBitmap = renderedImage.getBitmap();
         updateThermalImageView(thermalBitmap);
+        System.out.println("Image Type: " + renderedImage.imageType().toString());
+        if(renderedImage.imageType() == RenderedImage.ImageType.ThermalRadiometricKelvinImage) {
+            double averageTemp = 0;
+            short[] shortPixels = new short[renderedImage.pixelData().length / 2];
+            ByteBuffer.wrap(renderedImage.pixelData()).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(shortPixels);
+            for (int i = 0; i < shortPixels.length; i++) {
+                averageTemp += (((int) shortPixels[i]) - averageTemp) / ((double) i + 1);
+            }
+            final double averageC = (averageTemp / 100) - 273.15;
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
 
+                    Log.d("Test", "Average Temperature =" + averageC);
+                    Toast.makeText(getApplicationContext(), "Average Temperature = " + averageC + "ºC", Toast.LENGTH_LONG).show();
+                }
 
+            });
+        }
+        else
+        {
+            double averageTemp = 0;
+            short[] shortPixels = new short[renderedImage.pixelData().length / 2];
+            ByteBuffer.wrap(renderedImage.pixelData()).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(shortPixels);
+            for (int i = 0; i < shortPixels.length; i++) {
+                averageTemp += (((int) shortPixels[i]) - averageTemp) / ((double) i + 1);
+            }
+            final double averageC = (averageTemp / 100) - 273.15;
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+
+                    Log.d("Test", "ELSE Average Temperature =" + averageC);
+                    //Toast.makeText(getApplicationContext(), "Average Temperature = " + averageC + "ºC", Toast.LENGTH_LONG).show();
+                }
+
+            });
+        }
         /*
         Capture this image if requested.
         */

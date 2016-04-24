@@ -32,6 +32,7 @@ public class EditorActivity extends Activity {
 
         private ImageView imageView;
 
+
         private FrameProcessor frameProcessor;
         volatile RenderedImage msxRenderedImage;
         volatile Bitmap thermalBitmap;
@@ -42,6 +43,7 @@ public class EditorActivity extends Activity {
             public void onFrameProcessed(RenderedImage renderedImage) {
                 Log.d(LOG_TAG, "onFrameProcessed");
 
+                System.out.println("DOES THIS EVER WORKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK?");
                 if (renderedImage.imageType() == RenderedImage.ImageType.BlendedMSXRGBA8888Image) {
                     msxRenderedImage = renderedImage;
                     thermalBitmap = Bitmap.createBitmap(renderedImage.width(), renderedImage.height(), Bitmap.Config.ARGB_8888);
@@ -49,12 +51,12 @@ public class EditorActivity extends Activity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-
+                            System.out.println("This is hit.");
                             ((ImageView) findViewById(R.id.editorImageView)).setImageBitmap(thermalBitmap);
                         }
                     });
                 }else if (renderedImage.imageType() == RenderedImage.ImageType.ThermalRadiometricKelvinImage) {
-                    double averageTemp = 0;
+                   double averageTemp = 0;
                     short[] shortPixels = new short[renderedImage.pixelData().length / 2];
                     ByteBuffer.wrap(renderedImage.pixelData()).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(shortPixels);
                     for (int i = 0; i < shortPixels.length; i++) {

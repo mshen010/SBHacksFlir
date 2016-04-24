@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -23,6 +24,9 @@ public class EditData extends AppCompatActivity {
     Button submitButton;
     Button deleteButton;
 
+    //Stores non-editable ID
+    String ID;
+
 
 
     @Override
@@ -34,6 +38,7 @@ public class EditData extends AppCompatActivity {
         nameText = (EditText) findViewById(R.id.Name);
         ageText = (EditText) findViewById(R.id.Age);
         submitButton = (Button) findViewById(R.id.Submit);
+        deleteButton = (Button) findViewById(R.id.Delete);
 
         Intent i = getIntent();
         String value = i.getStringExtra("curr_data");
@@ -41,15 +46,17 @@ public class EditData extends AppCompatActivity {
         String[] lines = value.split(System.getProperty("line.separator"));
 
         idText.setText("ID: " + lines[0]);
+        ID = lines[0];
         nameText.setText(lines[1]);
         ageText.setText(lines[2]);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Firebase new_data = new Firebase("https://datatemp.firebaseio.com/patients/" + idText.getText().toString() );
+                Firebase new_data = new Firebase("https://datatemp.firebaseio.com/patients/" + ID );
                 new_data.child("name").setValue(nameText.getText().toString());
                 new_data.child("age").setValue(ageText.getText().toString());
+                Toast.makeText(getApplicationContext(), "Patient updated.", Toast.LENGTH_SHORT);
                 finish();
             }
         });
@@ -57,8 +64,10 @@ public class EditData extends AppCompatActivity {
         deleteButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Firebase rem_data = new Firebase("https://datatemp.firebase.io.com/patients/" + idText.getText().toString());
+                Firebase rem_data = new Firebase("https://datatemp.firebase.io.com/patients/" + ID);
                 rem_data.setValue(null);
+                Toast.makeText(getApplicationContext(), "Patient deleted.", Toast.LENGTH_SHORT);
+                finish();
             }
         });
 

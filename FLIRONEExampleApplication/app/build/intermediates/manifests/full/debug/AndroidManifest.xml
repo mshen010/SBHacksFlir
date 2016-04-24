@@ -39,13 +39,13 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity android:name="com.flir.flironeexampleapplication.ViewData" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name="com.flir.flironeexampleapplication.ViewData" >
 x
         </activity>
         <activity android:name="com.flir.flironeexampleapplication.util.EditData" />

@@ -319,8 +319,6 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
         if (this.imageCaptureRequested) {       //-----------------AFTER TAKING A PICTURE THIS IS CALLED AND IT PROCESSES THE DATE AND SUCH USE THIS TO STORE TO DATABASE
             imageCaptureRequested = false;
             final Context context = this;
-            RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.BlendedMSXRGBA8888Image;   //-------------------------THIS IS WHERE WE CHANGE DEFAULT IMAGETYPE
-            frameProcessor = new FrameProcessor(this, this, EnumSet.of(defaultImageType));
             new Thread(new Runnable() {
                 public void run() {
                     //Toast.makeText(PreviewActivity.this, "Picture Taken and Stored!", Toast.LENGTH_SHORT).show(); //----------TAKE THIS
@@ -459,9 +457,6 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
             onFrameReceived(frame);
         } else {
 
-            RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.ThermalRadiometricKelvinImage;   //-------------------------THIS IS WHERE WE CHANGE DEFAULT IMAGETYPE
-            frameProcessor = new FrameProcessor(this, this, EnumSet.of(defaultImageType));
-
             this.imageCaptureRequested = true;
             Toast.makeText(PreviewActivity.this, "Picture Taken and Stored!", Toast.LENGTH_SHORT).show();
 
@@ -498,11 +493,6 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
 
             //Check if there's more than 5 tempeartures for this patient if so then delete
             //TODO: Check for more than 5 temperatures and delete accordingly
-
-            //switching back to the new patient activity
-            Intent intent = new Intent(getApplicationContext(), NewPatientActivity.class);
-            intent.putExtra("user", user);
-            startActivityForResult(intent, 2);
 
         }
     }
@@ -673,7 +663,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
             }
             imageTypeNames[t.ordinal()] = name;
         }
-        RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.BlendedMSXRGBA8888Image;   //-------------------------THIS IS WHERE WE CHANGE DEFAULT IMAGETYPE
+        RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.ThermalRadiometricKelvinImage;   //-------------------------THIS IS WHERE WE CHANGE DEFAULT IMAGETYPE
         frameProcessor = new FrameProcessor(this, this, EnumSet.of(defaultImageType));
 
         ListView imageTypeListView = ((ListView)findViewById(R.id.imageTypeListView));

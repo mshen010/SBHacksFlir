@@ -1,0 +1,6 @@
+*.properties
+FLIRONEExampleApplication/app/build/outputs/logs/manifest-merger-debug-report.txt
+*.properties
+*.json
+*.lock
+*.bin

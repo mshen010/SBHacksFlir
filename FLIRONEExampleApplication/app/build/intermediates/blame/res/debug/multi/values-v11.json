@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
+        "outputFile": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 469
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -33,7 +33,7 @@
                     "endOffset": 894
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -54,7 +54,7 @@
                     "endOffset": 1322
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -75,7 +75,7 @@
                     "endOffset": 1748
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -96,7 +96,7 @@
                     "endOffset": 2175
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -117,7 +117,7 @@
                     "endOffset": 2600
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
@@ -137,7 +137,7 @@
                     "endOffset": 2689
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
@@ -156,7 +156,7 @@
                     "endOffset": 2790
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
@@ -176,7 +176,7 @@
                     "endOffset": 3198
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 4,
@@ -197,7 +197,7 @@
                     "endOffset": 3618
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 49,
                         "startColumn": 4,
@@ -218,7 +218,7 @@
                     "endOffset": 3725
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 3854
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
@@ -260,7 +260,7 @@
                     "endOffset": 4018
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -281,7 +281,7 @@
                     "endOffset": 4464
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -301,7 +301,7 @@
                     "endOffset": 4535
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -320,7 +320,7 @@
                     "endOffset": 4618
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 63,
                         "startColumn": 4,
@@ -340,7 +340,7 @@
                     "endOffset": 8326
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 64,
                         "startColumn": 4,
@@ -361,7 +361,7 @@
                     "endOffset": 12174
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 115,
                         "startColumn": 4,
@@ -381,7 +381,7 @@
                     "endOffset": 12265
                 },
                 "from": {
-                    "file": "C:\\Users\\skill\\OneDrive\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\John Li\\Documents\\GitHub\\SBHacksFlir\\FLIRONEExampleApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 169,
                         "startColumn": 4,

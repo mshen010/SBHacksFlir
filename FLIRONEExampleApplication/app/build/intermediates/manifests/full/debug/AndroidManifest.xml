@@ -38,17 +38,19 @@
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/FullscreenTheme" >
-        </activity>
+            android:theme="@style/FullscreenTheme" />
         <activity android:name="com.flir.flironeexampleapplication.ViewData" >
+            x
+        </activity>
+        <activity android:name="com.flir.flironeexampleapplication.util.EditData" />
+        <activity android:name="com.flir.flironeexampleapplication.Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-x
         </activity>
-        <activity android:name="com.flir.flironeexampleapplication.util.EditData" />
+        <activity android:name="com.flir.flironeexampleapplication.SignUp" />
     </application>
 
 </manifest>

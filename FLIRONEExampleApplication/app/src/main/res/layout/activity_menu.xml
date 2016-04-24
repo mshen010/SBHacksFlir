@@ -16,7 +16,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Add New Patient"
-        android:id="@+id/NewPatientButton" />
+        android:id="@+id/NewPatientButton"/>
 
     <Button
         android:layout_width="fill_parent"

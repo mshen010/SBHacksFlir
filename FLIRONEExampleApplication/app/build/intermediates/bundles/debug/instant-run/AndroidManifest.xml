@@ -41,17 +41,16 @@
             android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" />
         <activity android:name="com.flir.flironeexampleapplication.ViewData" >
-            x
         </activity>
         <activity android:name="com.flir.flironeexampleapplication.util.EditData" />
-        <activity android:name="com.flir.flironeexampleapplication.Login" >
+        <activity android:name="com.flir.flironeexampleapplication.MenuActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.flir.flironeexampleapplication.SignUp" />
+        <activity android:name="com.flir.flironeexampleapplication.NewPatientActivity" />
     </application>
 
 </manifest>

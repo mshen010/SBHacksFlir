@@ -95,25 +95,25 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
         flirOneDevice.setPowerUpdateDelegate(this);
         flirOneDevice.startFrameStream(this);
 
-        final ToggleButton chargeCableButton = (ToggleButton)findViewById(R.id.chargeCableToggle);
-        if(flirOneDevice instanceof SimulatedDevice){
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    chargeCableButton.setChecked(chargeCableIsConnected);
-                    chargeCableButton.setVisibility(View.VISIBLE);
-                }
-            });
-        }else{
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    chargeCableButton.setChecked(chargeCableIsConnected);
-                    chargeCableButton.setVisibility(View.INVISIBLE);
-                    findViewById(R.id.connect_sim_button).setEnabled(false);
-                }
-            });
-        }
+//        final ToggleButton chargeCableButton = (ToggleButton)findViewById(R.id.chargeCableToggle);
+//        if(flirOneDevice instanceof SimulatedDevice){
+//            runOnUiThread(new Runnable() {
+//                @Override
+//                public void run() {
+//                    chargeCableButton.setChecked(chargeCableIsConnected);
+//                    chargeCableButton.setVisibility(View.VISIBLE);
+//                }
+//            });
+//        }else{
+//            runOnUiThread(new Runnable() {
+//                @Override
+//                public void run() {
+//                    chargeCableButton.setChecked(chargeCableIsConnected);
+//                    chargeCableButton.setVisibility(View.INVISIBLE);
+//                    findViewById(R.id.connect_sim_button).setEnabled(false);
+//                }
+//            });
+//        }
 
         orientationEventListener.enable();
     }
@@ -124,23 +124,23 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
     public void onDeviceDisconnected(Device device){
         Log.i("ExampleApp", "Device disconnected!");
 
-        final ToggleButton chargeCableButton = (ToggleButton)findViewById(R.id.chargeCableToggle);
-        final TextView levelTextView = (TextView)findViewById(R.id.batteryLevelTextView);
-        final ImageView chargingIndicator = (ImageView)findViewById(R.id.batteryChargeIndicator);
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                thermalImageView.setImageBitmap(Bitmap.createBitmap(1,1, Bitmap.Config.ALPHA_8));
-                levelTextView.setText("--");
-                chargeCableButton.setChecked(chargeCableIsConnected);
-                chargeCableButton.setVisibility(View.INVISIBLE);
-                chargingIndicator.setVisibility(View.GONE);
-                thermalImageView.clearColorFilter();
-                findViewById(R.id.tuningProgressBar).setVisibility(View.GONE);
-                findViewById(R.id.tuningTextView).setVisibility(View.GONE);
-                findViewById(R.id.connect_sim_button).setEnabled(true);
-            }
-        });
+//        final ToggleButton chargeCableButton = (ToggleButton)findViewById(R.id.chargeCableToggle);
+//        final TextView levelTextView = (TextView)findViewById(R.id.batteryLevelTextView);
+//        final ImageView chargingIndicator = (ImageView)findViewById(R.id.batteryChargeIndicator);
+//        runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+//                thermalImageView.setImageBitmap(Bitmap.createBitmap(1,1, Bitmap.Config.ALPHA_8));
+//                levelTextView.setText("--");
+//                chargeCableButton.setChecked(chargeCableIsConnected);
+//                chargeCableButton.setVisibility(View.INVISIBLE);
+//                chargingIndicator.setVisibility(View.GONE);
+//                thermalImageView.clearColorFilter();
+//                findViewById(R.id.tuningProgressBar).setVisibility(View.GONE);
+//                findViewById(R.id.tuningTextView).setVisibility(View.GONE);
+//                findViewById(R.id.connect_sim_button).setEnabled(true);
+//            }
+//        });
         flirOneDevice = null;
         orientationEventListener.disable();
     }
@@ -189,28 +189,28 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                ImageView chargingIndicator = (ImageView)findViewById(R.id.batteryChargeIndicator);
-                if (originalChargingIndicatorColor == null){
-                    originalChargingIndicatorColor = chargingIndicator.getColorFilter();
-                }
-                switch (batteryChargingState) {
-                    case FAULT:
-                    case FAULT_HEAT:
-                        chargingIndicator.setColorFilter(Color.RED);
-                        chargingIndicator.setVisibility(View.VISIBLE);
-                        break;
-                    case FAULT_BAD_CHARGER:
-                        chargingIndicator.setColorFilter(Color.DKGRAY);
-                        chargingIndicator.setVisibility(View.VISIBLE);
-                    case MANAGED_CHARGING:
-                        chargingIndicator.setColorFilter(originalChargingIndicatorColor);
-                        chargingIndicator.setVisibility(View.VISIBLE);
-                        break;
-                    case NO_CHARGING:
-                    default:
-                        chargingIndicator.setVisibility(View.GONE);
-                        break;
-                }
+//                ImageView chargingIndicator = (ImageView)findViewById(R.id.batteryChargeIndicator);
+//                if (originalChargingIndicatorColor == null){
+//                    originalChargingIndicatorColor = chargingIndicator.getColorFilter();
+//                }
+//                switch (batteryChargingState) {
+//                    case FAULT:
+//                    case FAULT_HEAT:
+//                        chargingIndicator.setColorFilter(Color.RED);
+//                        chargingIndicator.setVisibility(View.VISIBLE);
+//                        break;
+//                    case FAULT_BAD_CHARGER:
+//                        chargingIndicator.setColorFilter(Color.DKGRAY);
+//                        chargingIndicator.setVisibility(View.VISIBLE);
+//                    case MANAGED_CHARGING:
+//                        chargingIndicator.setColorFilter(originalChargingIndicatorColor);
+//                        chargingIndicator.setVisibility(View.VISIBLE);
+//                        break;
+//                    case NO_CHARGING:
+//                    default:
+//                        chargingIndicator.setVisibility(View.GONE);
+//                        break;
+//                }
             }
         });
     }
@@ -218,13 +218,13 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
     public void onBatteryPercentageReceived(final byte percentage){
         Log.i("ExampleApp", "Battery percentage received!");
 
-        final TextView levelTextView = (TextView)findViewById(R.id.batteryLevelTextView);
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                levelTextView.setText(String.valueOf((int) percentage) + "%");
-            }
-        });
+//        final TextView levelTextView = (TextView)findViewById(R.id.batteryLevelTextView);
+//        runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+//                levelTextView.setText(String.valueOf((int) percentage) + "%");
+//            }
+//        });
 
 
     }
@@ -587,7 +587,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
         setContentView(R.layout.activity_preview);
 
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
-        final View controlsViewTop = findViewById(R.id.fullscreen_content_controls_top);
+//        final View controlsViewTop = findViewById(R.id.fullscreen_content_controls_top);
         final View contentView = findViewById(R.id.fullscreen_content);
 
 
@@ -666,13 +666,13 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                             controlsView.animate()
                                     .translationY(visible ? 0 : mControlsHeight)
                                     .setDuration(mShortAnimTime);
-                            controlsViewTop.animate().translationY(visible ? 0 : -1 * mControlsHeight).setDuration(mShortAnimTime);
+                            //controlsViewTop.animate().translationY(visible ? 0 : -1 * mControlsHeight).setDuration(mShortAnimTime);
                         } else {
                             // If the ViewPropertyAnimator APIs aren't
                             // available, simply show or hide the in-layout UI
                             // controls.
                             controlsView.setVisibility(visible ? View.VISIBLE : View.GONE);
-                            controlsViewTop.setVisibility(visible ? View.VISIBLE : View.GONE);
+                           // controlsViewTop.setVisibility(visible ? View.VISIBLE : View.GONE);
                         }
 
                         if (visible && !((ToggleButton)findViewById(R.id.change_view_button)).isChecked() && AUTO_HIDE) {

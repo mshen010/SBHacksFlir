@@ -19,7 +19,7 @@
         jar="C:\Users\John Li\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.1"
-        sha1="f2d31f85e8672bbbe6c172921280bc48e400ebcb">
+        sha1="810cc302c6b71a43bfa6ca6af7c6af8c453fb440">
         <dex dex="C:\Users\John Li\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_902e17666203cae915c87189af7b63d08b6d5468\classes.dex" />
     </item>
     <item
@@ -75,7 +75,7 @@
         jar="C:\Users\John Li\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.1"
-        sha1="6070c67f27ef3132817934b55bd011ac9f2db167">
+        sha1="7708ce3ce60a4c67e6836d36e40dfb32eeafdb2c">
         <dex dex="C:\Users\John Li\Documents\GitHub\SBHacksFlir\FLIRONEExampleApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4cd104306433ff9acc335d17c32197a197e11800\classes.dex" />
     </item>
     <item

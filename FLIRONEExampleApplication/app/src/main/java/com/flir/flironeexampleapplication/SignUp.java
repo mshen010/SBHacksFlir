@@ -97,7 +97,7 @@ public class SignUp extends FragmentActivity {
             @Override
             public void onClick(View view) {
                 //Create a firebase ref to the website
-                Firebase myFirebaseRef = new Firebase("https://datatemp.firebaseio.com/");
+                Firebase myFirebaseRef = new Firebase("https://datatemp2.firebaseio.com/");
                 //sign up the user and see if it signs up successfully with given email and password
                 myFirebaseRef.createUser(emailEditText.getText().toString(), passwordEditText.getText().toString(), new Firebase.ValueResultHandler<Map<String, Object>>() {
                     @Override
@@ -123,18 +123,18 @@ public class SignUp extends FragmentActivity {
                         {
                             Toast.makeText(SignUp.this, "Account Successfully Created", Toast.LENGTH_SHORT).show();
                             //Afterwards sign the user into the database and store in the fields that they typed in
-                            Firebase myFirebaseRef2 = new Firebase("https://datatemp.firebaseio.com/");
+                            Firebase myFirebaseRef2 = new Firebase("https://datatemp2.firebaseio.com/");
                             myFirebaseRef2.authWithPassword(emailEditText.getText().toString(), passwordEditText.getText().toString(), new Firebase.AuthResultHandler() {
                                 @Override
                                 public void onAuthenticated(AuthData authData) {
                                     Toast.makeText(SignUp.this, "User ID: " + authData.getUid() + "Provider: " + authData.getProvider(), Toast.LENGTH_SHORT).show();    //TODO:-----------THIS IS FOR DEBUG REMOVE THIS WHEN NEEDED
 
                                     //grab the user id and store it in the base
-                                    Firebase users = new Firebase("https://datatemp.firebaseio.com/");
+                                    Firebase users = new Firebase("https://datatemp2.firebaseio.com/");
                                     users.child("User ID (Email): ").setValue(authData.getUid());
 
                                     //store in the values in the user branch
-                                    Firebase userData = new Firebase("https://datatemp.firebaseio.com/" + authData.getUid());
+                                    Firebase userData = new Firebase("https://datatemp2.firebaseio.com/" + authData.getUid());
                                     userData.child("First Name:").setValue(firstNameEditText.getText().toString());
                                     userData.child("Last Name:").setValue(lastNameEditText.getText().toString());
                                     userData.child("Gender:").setValue(genderSpinner.getSelectedItem().toString());
@@ -154,6 +154,11 @@ public class SignUp extends FragmentActivity {
                                     Log.e("Login Error", firebaseError.toString());
                                 }
                             });
+
+                            //unauthorizes the them so that they can log in
+                            myFirebaseRef2.unauth();
+
+                            //switches back to the start activity
                             Intent intent = new Intent(getApplicationContext(), Login.class);
                             startActivity(intent);
                         }

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="FLIRONEExampleApplication">MyAndroidApp</string>
+    <string name="lblPassword">Enter Your Password :</string>
+    <string name="btn_submit">Submit</string>
     <string name="app_name">FLIR ONE Example Application</string>
     <string name="change_view">Change View \u21EA</string>
     <string name="change_view_retract">Change View \u21B2</string>

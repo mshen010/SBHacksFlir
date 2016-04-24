@@ -32,18 +32,17 @@
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/FullscreenTheme">
-
-        </activity>
+            android:theme="@style/FullscreenTheme"></activity>
         <activity android:name=".ViewData">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-x
+            x
         </activity>
-        <activity android:name=".util.EditData"></activity>
+        <activity android:name=".util.EditData" />
+        <activity android:name=".util.MenuActivity"></activity>
     </application>
 
 </manifest>

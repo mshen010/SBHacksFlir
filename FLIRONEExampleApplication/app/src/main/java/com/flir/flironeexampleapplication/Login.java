@@ -16,6 +16,7 @@ import com.firebase.client.FirebaseError;
 public class Login extends AppCompatActivity {
 
     //Variables for activity
+    User user;
     EditText passwordEditText;
     EditText usernameEditText;
     Button loginButton;
@@ -26,6 +27,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Firebase.setAndroidContext(this);
+        user = new User();
 
         //-----------------Defined Variables to .xml elements------------------------
         passwordEditText = (EditText) findViewById(R.id.passwordEditText);
@@ -39,21 +41,22 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Firebase myFirebaseRef = new Firebase("https://datatemp2.firebaseio.com/");
+                Firebase myFirebaseRef = new Firebase("https://datatemp.firebaseio.com/");
 
                 myFirebaseRef.authWithPassword(usernameEditText.getText().toString(), passwordEditText.getText().toString(), new Firebase.AuthResultHandler() {
                     @Override
                     public void onAuthenticated(AuthData authData) {
                         Toast.makeText(Login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
 
-                        Firebase users = new Firebase("https://datatemp2.firebaseio.com/");
+                        Firebase users = new Firebase("https://datatemp.firebaseio.com/");
                         users.child("Logged-In ID: ").setValue(authData.getUid());
 
                         //TODO: Where you include the rules/storage for firebase data
-
+                        user.setUID(authData.getUid());
                         //switches back to the menu activity
                         Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-                        startActivity(intent);
+                        intent.putExtra("user", user);
+                        startActivityForResult(intent, 1);
 
                     }
 
@@ -76,6 +79,18 @@ public class Login extends AppCompatActivity {
             }
         });
         //------------------------------------------------------------------------------------//
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        if(resultCode == RESULT_OK)
+        {
+            user = data.getParcelableExtra("updated_user"); //Brought from OTHER activities.
+        }
+        else if (resultCode == RESULT_CANCELED){
+            Log.i("Main", "Activity result failed");
+        }
     }
 
 }

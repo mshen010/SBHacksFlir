@@ -88,7 +88,7 @@
 
     </LinearLayout>
 
-    <TextView
+<!--    <TextView
         android:id="@+id/LastFiveTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listView" />
-
+-->
     <Button
         android:id="@+id/Submit"
         android:layout_width="wrap_content"

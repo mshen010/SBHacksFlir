@@ -27,7 +27,7 @@ import java.util.List;
 public class EditData extends AppCompatActivity {
 
     String[] temps = new String[5];
-    ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, temps);
+//    ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, temps);
 
     TextView idText;
     TextView tempText;
@@ -40,7 +40,7 @@ public class EditData extends AppCompatActivity {
     //Stores non-editable ID
     String ID;
 
-    private ListView lv;
+//    private ListView lv;
 
 
     @Override
@@ -56,7 +56,7 @@ public class EditData extends AppCompatActivity {
         //deleteButton = (Button) findViewById(R.id.Delete);
         tempButton = (Button) findViewById(R.id.Photo);
 
-        lv = (ListView) findViewById(R.id.listView);
+    //    lv = (ListView) findViewById(R.id.listView);
 
         Intent i = getIntent();
         String value = i.getStringExtra("curr_data");
@@ -76,12 +76,12 @@ public class EditData extends AppCompatActivity {
                         ID = String.valueOf(patient.getId());
                         nameText.setText(patient.getName());
                         ageText.setText(String.valueOf(patient.getAge()));
-                        for(int i = 0; i < 5; ++i) {
+                      /*  for(int i = 0; i < 5; ++i) {
                              temps[i] = patient.recentTemps[i];
-                        }
+                        }*/
                         break;
                     }
-                    lv.setAdapter(arrayAdapter);
+                    //lv.setAdapter(arrayAdapter);
                 }
             }
             @Override
@@ -108,7 +108,7 @@ public class EditData extends AppCompatActivity {
             }
         });
 
-        deleteButton.setOnClickListener(new View.OnClickListener(){
+       /* deleteButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Firebase rem_data = new Firebase("https://datatemp.firebase.io.com/patients/" + ID);
@@ -116,14 +116,13 @@ public class EditData extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Patient deleted.", Toast.LENGTH_SHORT);
                 finish();
             }
-        });
+        });*/
 
         tempButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v)
             {
                 Intent i = new Intent(getApplicationContext(), PreviewActivity.class);
-
             }
         });
 

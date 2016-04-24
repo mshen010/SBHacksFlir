@@ -139,6 +139,9 @@ public class SignUp extends FragmentActivity {
                                     userData.child("Last Name:").setValue(lastNameEditText.getText().toString());
                                     userData.child("Gender:").setValue(genderSpinner.getSelectedItem().toString());
 
+                                    Firebase intData = new Firebase("https://datatemp.firebaseio.com/" + authData.getUid() + "/internal/0/");
+                                    intData.child("numPats").setValue("0");
+
                                     //TODO: Where you include the rules/storage for firebase data
 
                                     //users.child("users").setValue(authData.getUid());
@@ -154,9 +157,6 @@ public class SignUp extends FragmentActivity {
                                     Log.e("Login Error", firebaseError.toString());
                                 }
                             });
-
-                            //unauthorizes the them so that they can log in
-                            myFirebaseRef2.unauth();
 
                             //switches back to the start activity
                             Intent intent = new Intent(getApplicationContext(), Login.class);

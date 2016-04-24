@@ -10,8 +10,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.firebase.client.AuthData;
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 
 public class Login extends AppCompatActivity {
 
@@ -49,7 +51,26 @@ public class Login extends AppCompatActivity {
                         Toast.makeText(Login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
 
                         Firebase users = new Firebase("https://datatemp.firebaseio.com/");
-                        users.child("Logged-In ID: ").setValue(authData.getUid());
+                        users.child("Logged-In ID ").setValue(authData.getUid());
+                        Firebase num_pats = new Firebase("https://datatemp.firebaseio.com/" + authData.getUid() + "/internal/");
+                        Firebase list = new Firebase("https://datatemp.firebaseio.com/" + user.getUID() + "/patients/");
+                        list.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                System.out.println("There are " + dataSnapshot.getChildrenCount() + " patients.");
+                                int index = 0;
+                                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                                    Patient patient = postSnapshot.getValue(Patient.class);
+                                    index++;
+                                }
+                                System.out.println(index);
+                                user.setNumPatients(index);
+                            }
+                            @Override
+                            public void onCancelled(FirebaseError firebaseError) {
+                                System.out.println("The read failed: " + firebaseError.getMessage());
+                            }
+                        });
 
                         //TODO: Where you include the rules/storage for firebase data
                         user.setUID(authData.getUid());

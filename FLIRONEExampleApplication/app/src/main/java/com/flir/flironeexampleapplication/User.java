@@ -12,8 +12,6 @@ public class User extends Application implements Parcelable {
     private int numPatients;
 
     public User(){
-        UID = "";
-        numPatients = 0;
     }
     public User(Parcel p)
     {
@@ -51,5 +49,6 @@ public class User extends Application implements Parcelable {
     public void setUID(String i) {UID = i; }
     public int getNumPatients() { return numPatients; }
     public void newPatient() { numPatients += 1; }
+    public void setNumPatients(int i) { numPatients = i; }
     //TODO: Extend functionality to all activities
 }

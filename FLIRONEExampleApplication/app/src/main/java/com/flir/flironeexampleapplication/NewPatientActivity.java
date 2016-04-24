@@ -14,7 +14,6 @@ import com.firebase.client.Firebase;
 public class NewPatientActivity extends AppCompatActivity {
 
     EditText Name;
-    EditText ID;
     EditText Gender;
     EditText Age;
 
@@ -29,7 +28,6 @@ public class NewPatientActivity extends AppCompatActivity {
         Firebase.setAndroidContext(this);
 
         Name = (EditText) findViewById(R.id.editTextName);
-        ID =  (EditText) findViewById(R.id.editTextID);
         Gender = (EditText) findViewById(R.id.editTextGender);
         Age = (EditText) findViewById(R.id.editTextAge);
 
@@ -49,8 +47,8 @@ public class NewPatientActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Firebase newPatient = new Firebase("https://datatemp.firebaseio.com/patients");
                 newPatient.child("name").setValue(Name.getText().toString());
-                newPatient.child("id").setValue(ID.getText().toString());
                 newPatient.child("gender").setValue(Gender.getText().toString());
+                //TODO: Increment number of patients in User
                 newPatient.child("age").setValue(Age.getText().toString());
                 Toast.makeText(getApplicationContext(), "Patient created.", Toast.LENGTH_SHORT);
                 finish();

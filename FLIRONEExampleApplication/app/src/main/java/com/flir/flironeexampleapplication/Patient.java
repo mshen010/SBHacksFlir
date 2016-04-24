@@ -9,7 +9,7 @@ public class Patient {
     private int id;
     private float temperature;
     private String gender;
-
+    public String[] recentTemps = new String[5];
     public Patient() {
 
     }

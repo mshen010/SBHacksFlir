@@ -25,14 +25,6 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:text="ID"
-        android:ems="10"
-        android:id="@+id/editTextID" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="Gender"
         android:ems="10"

@@ -32,9 +32,12 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769">
-              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-              <folding />
+            <state vertical-scroll-proportion="-14.576923">
+              <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+              <folding>
+                <element signature="e#425#443#0" expanded="true" />
+                <element signature="e#1310#1328#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,25 +48,87 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5636363">
-              <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+            <state vertical-scroll-proportion="-4.818182">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/util/MenuActivity.java">
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34972677">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.9622642">
+              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/MenuActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="29" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_new_patient.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_new_patient.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.709091">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewPatientActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/NewPatientActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.60382515">
+              <caret line="49" column="78" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#782#1034#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1082#1324#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
+                <element signature="e#1138#1387#0" expanded="true" />
+                <element signature="e#1386#1387#0" expanded="true" />
+                <element signature="e#1425#2072#0" expanded="true" />
+                <element signature="e#2071#2072#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Patient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/Patient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/util/EditData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1586,12 +1651,15 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_data.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/EditorActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/PreviewActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/Patient.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/util/EditData.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/MenuActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/util/MenuActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/MenuActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/Patient.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_new_patient.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/NewPatientActivity.java" />
       </list>
     </option>
   </component>
@@ -1626,8 +1694,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1652,6 +1721,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FLIRONEExampleApplication" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1735,23 +1822,27 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="device.picker.selection" value="0bb8dcf4" />
+    <property name="device.picker.selection" value="5619636c" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.flir.flironeexampleapplication" />
     </key>
     <key name="android.template.packageName">
+      <recent name="com.flir.flironeexampleapplication" />
       <recent name="com.flir.flironeexampleapplication.util" />
     </key>
   </component>
@@ -2036,15 +2127,15 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900763" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2110,84 +2201,29 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/PreviewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="270" column="20" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
-          <folding>
-            <element signature="e#29309#29310#0" expanded="false" />
-            <element signature="e#31470#31471#0" expanded="false" />
-            <marker date="1461469123869" expanded="true" signature="52:232" placeholder="..." />
-            <marker date="1461469123869" expanded="true" signature="11603:15661" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="11832:13742" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="11868:13728" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="12714:13096" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="12848:13061" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="13258:13708" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="13336:13686" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="13450:13657" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="13502:13627" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="14310:15508" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="14380:15490" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="15670:15798" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="15855:15997" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="16063:16215" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="16278:16352" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="16437:16516" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="16596:16693" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="16739:17142" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="17186:17794" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="17855:18078" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="18118:18328" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="18372:19344" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="19396:19774" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="19824:19971" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="19977:20097" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="20140:22298" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="20708:21816" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="20787:21802" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="20946:21773" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="21024:21751" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="21260:21575" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="21362:21541" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="21904:22049" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="21983:22035" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="22342:22615" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="22727:29895" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="24109:24765" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="24226:24755" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="25258:25557" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="25375:25547" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="25568:25661" placeholder="//..." />
-            <marker date="1461469123869" expanded="true" signature="25897:28018" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="26039:26114" placeholder="@{...}" />
-            <marker date="1461469123869" expanded="true" signature="26183:28000" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="26303:26543" placeholder="//..." />
-            <marker date="1461469123869" expanded="true" signature="27339:27501" placeholder="//..." />
-            <marker date="1461469123869" expanded="true" signature="28167:28429" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="28234:28419" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="28441:28624" placeholder="//..." />
-            <marker date="1461469123869" expanded="true" signature="28788:28945" placeholder="{...}" />
-            <marker date="1461469123869" expanded="false" signature="28873:28892" placeholder=" { " />
-            <marker date="1461469123869" expanded="false" signature="28921:28935" placeholder=" }" />
-            <marker date="1461469123869" expanded="true" signature="29053:29598" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="29143:29158" placeholder="{...}" />
-            <marker date="1461469123869" expanded="false" signature="29251:29270" placeholder=" { " />
-            <marker date="1461469123869" expanded="true" signature="29385:29588" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="29694:29886" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="29780:29876" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="29938:30199" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="30240:30463" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="30538:30785" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="30597:30753" placeholder="//..." />
-            <marker date="1461469123869" expanded="true" signature="30792:31002" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="31081:31307" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="31168:31301" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="31396:31494" placeholder="{...}" />
-            <marker date="1461469123869" expanded="false" signature="31478:31488" placeholder=" }" />
-            <marker date="1461469123869" expanded="true" signature="31501:31620" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="31667:31789" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2225,12 +2261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="43" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="43" />
-          <folding>
-            <marker date="1461469123853" expanded="true" signature="52:413" placeholder="..." />
-            <marker date="1461469123853" expanded="true" signature="3090:3113" placeholder="{...}" />
-            <marker date="1461469123853" expanded="true" signature="3090:3148" placeholder="{...}" />
-            <marker date="1461469123853" expanded="true" signature="3090:3158" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2339,14 +2369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/util/EditData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2358,92 +2380,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/Patient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07103825">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/PreviewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04644809">
           <caret line="311" column="20" selection-start-line="311" selection-start-column="20" selection-end-line="311" selection-end-column="20" />
-          <folding>
-            <element signature="e#29309#29310#0" expanded="false" />
-            <element signature="e#31470#31471#0" expanded="false" />
-            <marker date="1461469123869" expanded="true" signature="52:232" placeholder="..." />
-            <marker date="1461469123869" expanded="true" signature="11603:15661" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="11832:13742" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="11868:13728" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="12714:13096" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="12848:13061" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="13258:13708" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="13336:13686" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="13450:13657" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="13502:13627" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="14310:15508" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="14380:15490" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="15670:15798" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="15855:15997" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="16063:16215" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="16278:16352" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="16437:16516" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="16596:16693" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="16739:17142" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="17186:17794" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="17855:18078" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="18118:18328" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="18372:19344" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="19396:19774" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="19824:19971" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="19977:20097" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="20140:22298" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="20708:21816" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="20787:21802" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="20946:21773" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="21024:21751" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="21260:21575" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="21362:21541" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="21904:22049" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="21983:22035" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="22342:22615" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="22727:29895" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="24109:24765" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="24226:24755" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="25258:25557" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="25375:25547" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="25568:25661" placeholder="//..." />
-            <marker date="1461469123869" expanded="true" signature="25897:28018" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="26039:26114" placeholder="@{...}" />
-            <marker date="1461469123869" expanded="true" signature="26183:28000" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="26303:26543" placeholder="//..." />
-            <marker date="1461469123869" expanded="true" signature="27339:27501" placeholder="//..." />
-            <marker date="1461469123869" expanded="true" signature="28167:28429" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="28234:28419" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="28441:28624" placeholder="//..." />
-            <marker date="1461469123869" expanded="true" signature="28788:28945" placeholder="{...}" />
-            <marker date="1461469123869" expanded="false" signature="28873:28892" placeholder=" { " />
-            <marker date="1461469123869" expanded="false" signature="28921:28935" placeholder=" }" />
-            <marker date="1461469123869" expanded="true" signature="29053:29598" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="29143:29158" placeholder="{...}" />
-            <marker date="1461469123869" expanded="false" signature="29251:29270" placeholder=" { " />
-            <marker date="1461469123869" expanded="true" signature="29385:29588" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="29694:29886" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="29780:29876" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="29938:30199" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="30240:30463" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="30538:30785" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="30597:30753" placeholder="//..." />
-            <marker date="1461469123869" expanded="true" signature="30792:31002" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="31081:31307" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="31168:31301" placeholder="{...}" />
-            <marker date="1461469123869" expanded="true" signature="31396:31494" placeholder="{...}" />
-            <marker date="1461469123869" expanded="false" signature="31478:31488" placeholder=" }" />
-            <marker date="1461469123869" expanded="true" signature="31501:31620" placeholder="/**...*/" />
-            <marker date="1461469123869" expanded="true" signature="31667:31789" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2462,12 +2402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04644809">
           <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
-          <folding>
-            <marker date="1461469123853" expanded="true" signature="52:413" placeholder="..." />
-            <marker date="1461469123853" expanded="true" signature="3090:3113" placeholder="{...}" />
-            <marker date="1461469123853" expanded="true" signature="3090:3148" placeholder="{...}" />
-            <marker date="1461469123853" expanded="true" signature="3090:3158" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2492,10 +2426,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_new_patient.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/Patient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/util/EditData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9622642">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -2505,22 +2474,51 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5636363">
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        <state vertical-scroll-proportion="-4.818182">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/util/MenuActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34972677">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="-14.576923">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#782#1034#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1082#1324#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#425#443#0" expanded="true" />
+            <element signature="e#1310#1328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_new_patient.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.709091">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/MenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="29" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flir/flironeexampleapplication/NewPatientActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60382515">
+          <caret line="49" column="78" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
+          <folding>
+            <element signature="e#1138#1387#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1425#2072#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
           </folding>
         </state>
       </provider>

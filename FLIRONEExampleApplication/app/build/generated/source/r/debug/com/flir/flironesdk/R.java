@@ -428,7 +428,7 @@ public final class R {
 		public static final int abc_screen_toolbar = 0x7f040014;
 		public static final int abc_search_dropdown_item_icons_2line = 0x7f040015;
 		public static final int abc_search_view = 0x7f040016;
-		public static final int support_simple_spinner_dropdown_item = 0x7f04002a;
+		public static final int support_simple_spinner_dropdown_item = 0x7f04002c;
 	}
 	public static final class raw {
 		public static final int default_camera_files = 0x7f070000;

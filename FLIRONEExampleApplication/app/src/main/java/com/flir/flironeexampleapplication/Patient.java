@@ -8,6 +8,7 @@ public class Patient {
     private int age;
     private int id;
     private float temperature;
+    private String gender;
 
     public Patient() {
 
@@ -27,6 +28,8 @@ public class Patient {
     {
         return id;
     }
+
+    public String getGender() { return gender; }
 
     public float getTemperature() { return temperature; }
 

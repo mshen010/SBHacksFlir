@@ -1,5 +1,8 @@
 package com.flir.flironeexampleapplication;
 
+import com.firebase.client.AuthData;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
 import com.flir.flironeexampleapplication.util.SystemUiHider;
 
 import android.annotation.TargetApi;
@@ -14,6 +17,7 @@ import android.graphics.PorterDuff;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Environment;
+import android.text.format.Time;
 import android.util.Log;
 import android.content.Context;
 import android.app.Activity;
@@ -48,10 +52,15 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.EnumSet;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
+import java.util.TimeZone;
 
 /**
  * An example activity and delegate for FLIR One image streaming and device interaction.
@@ -70,9 +79,13 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
     private volatile Socket streamSocket = null;
     private boolean chargeCableIsConnected = true;
 
+    private User user;
+    Intent in;
+
     private int deviceRotation= 0;
     private OrientationEventListener orientationEventListener;
-
+    private double temperatureOfPicture = 0;    //--------------------------THIS IS TEMPERATURE OF TAKEN PICTURE
+    private String temperatureDate = "";
 
     private volatile Device flirOneDevice;
     private FrameProcessor frameProcessor;
@@ -250,6 +263,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
 
     private Bitmap thermalBitmap = null;
 
+    //-----------------------------------------THIS IS WHERE WE GET THE TEMPERATURE------------------------------------
     // Frame Processor Delegate method, will be called each time a rendered frame is produced
     public void onFrameProcessed(final RenderedImage renderedImage){
         thermalBitmap = renderedImage.getBitmap();
@@ -263,15 +277,19 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                 averageTemp += (((int) shortPixels[i]) - averageTemp) / ((double) i + 1);
             }
             final double averageC = (averageTemp / 100) - 273.15;
+
+            temperatureOfPicture = averageC;            //------------------------THIS IS WHERE TEMPERATUREOFPICTURE IS SET
+
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
 
                     Log.d("Test", "Average Temperature =" + averageC);
-                    Toast.makeText(getApplicationContext(), "Average Temperature = " + averageC + "ºC", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "Average Temperature = " + averageC + "ºC", Toast.LENGTH_SHORT).show();
                 }
 
             });
+
         }
         else
         {
@@ -282,6 +300,9 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                 averageTemp += (((int) shortPixels[i]) - averageTemp) / ((double) i + 1);
             }
             final double averageC = (averageTemp / 100) - 273.15;
+
+            temperatureOfPicture = averageC;            //------------------------THIS IS WHERE TEMPERATUREOFPICTURE IS SET
+
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -295,16 +316,20 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
         /*
         Capture this image if requested.
         */
-        if (this.imageCaptureRequested) {
+        if (this.imageCaptureRequested) {       //-----------------AFTER TAKING A PICTURE THIS IS CALLED AND IT PROCESSES THE DATE AND SUCH USE THIS TO STORE TO DATABASE
             imageCaptureRequested = false;
             final Context context = this;
+            RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.BlendedMSXRGBA8888Image;   //-------------------------THIS IS WHERE WE CHANGE DEFAULT IMAGETYPE
+            frameProcessor = new FrameProcessor(this, this, EnumSet.of(defaultImageType));
             new Thread(new Runnable() {
                 public void run() {
+                    //Toast.makeText(PreviewActivity.this, "Picture Taken and Stored!", Toast.LENGTH_SHORT).show(); //----------TAKE THIS
                     String path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).toString();
                     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ssZ", Locale.getDefault());
-                    String formatedDate = sdf.format(new Date());
+                    final String formatedDate = sdf.format(new Date());
                     String fileName = "FLIROne-" + formatedDate + ".jpg";
                     try{
+
                         lastSavedPath = path+ "/" + fileName;
                         renderedImage.getFrame().save(new File(lastSavedPath), RenderedImage.Palette.Iron, RenderedImage.ImageType.BlendedMSXRGBA8888Image);
 
@@ -318,6 +343,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                                     }
 
                                 });
+
 
                     }catch (Exception e){
                         e.printStackTrace();
@@ -432,7 +458,52 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
             // load the frame
             onFrameReceived(frame);
         } else {
+
+            RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.ThermalRadiometricKelvinImage;   //-------------------------THIS IS WHERE WE CHANGE DEFAULT IMAGETYPE
+            frameProcessor = new FrameProcessor(this, this, EnumSet.of(defaultImageType));
+
             this.imageCaptureRequested = true;
+            Toast.makeText(PreviewActivity.this, "Picture Taken and Stored!", Toast.LENGTH_SHORT).show();
+
+            //--------------------------------AFTER TAKING PICTURE AND SUCH STORE IT IN THE DATABASE---------------------------------------------------
+            Firebase myFirebaseRef2 = new Firebase("https://datatemp2.firebaseio.com/");
+
+            //Let the user know that we took picture!
+            Toast.makeText(PreviewActivity.this, "Picture Taken and Stored!", Toast.LENGTH_SHORT).show();
+
+            //store in the values in the the user patient's branch assuming that patient it passed in here
+            Firebase userPatientData = new Firebase("https://datatemp2.firebaseio.com/" + user.getUID() + "/patients/" + user.getNumPatients() + "/");
+            Firebase tempRef = userPatientData.child("temperatures");
+
+            //Calculate Time First
+            Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("America/Los_Angeles"));
+            Date currentLocalTime = cal.getTime();
+            DateFormat date = new SimpleDateFormat("HH:mm a");
+            // you can get seconds by adding  "...:ss" to it
+            date.setTimeZone(TimeZone.getTimeZone("America/Los_Angeles")); //--------BTW THIS IS STATIC TO LOS ANGELAS
+
+            String localTime = date.format(currentLocalTime);
+
+            //calculate date
+            SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy", Locale.getDefault());
+            temperatureDate = sdf.format(new Date());
+            String newTemperature = String.valueOf(temperatureOfPicture);
+
+            //push info into a new key under patient's temperature
+            Map<String, String> post1 = new HashMap<String, String>();
+            post1.put("Date: ", temperatureDate);
+            post1.put("Time: ", localTime);
+            post1.put("Temperature: ", newTemperature);
+            tempRef.push().setValue(post1);
+
+            //Check if there's more than 5 tempeartures for this patient if so then delete
+            //TODO: Check for more than 5 temperatures and delete accordingly
+
+            //switching back to the new patient activity
+//            Intent intent = new Intent(getApplicationContext(), NewPatientActivity.class);
+//            intent.putExtra("user", user);
+//            startActivityForResult(intent, 2);
+
         }
     }
     public void onConnectSimClicked(View v){
@@ -582,9 +653,10 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.activity_preview);
+
+        in = getIntent();
+        user = in.getParcelableExtra("user");
 
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
 //        final View controlsViewTop = findViewById(R.id.fullscreen_content_controls_top);
@@ -601,7 +673,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
             }
             imageTypeNames[t.ordinal()] = name;
         }
-        RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.ThermalRadiometricKelvinImage;
+        RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.BlendedMSXRGBA8888Image;   //-------------------------THIS IS WHERE WE CHANGE DEFAULT IMAGETYPE
         frameProcessor = new FrameProcessor(this, this, EnumSet.of(defaultImageType));
 
         ListView imageTypeListView = ((ListView)findViewById(R.id.imageTypeListView));
@@ -672,7 +744,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                             // available, simply show or hide the in-layout UI
                             // controls.
                             controlsView.setVisibility(visible ? View.VISIBLE : View.GONE);
-                           // controlsViewTop.setVisibility(visible ? View.VISIBLE : View.GONE);
+                            // controlsViewTop.setVisibility(visible ? View.VISIBLE : View.GONE);
                         }
 
                         if (visible && !((ToggleButton)findViewById(R.id.change_view_button)).isChecked() && AUTO_HIDE) {

@@ -21,12 +21,13 @@ import com.flir.flironeexampleapplication.R;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class EditData extends AppCompatActivity {
 
     String[] temps = new String[5];
-
-    ListView temp_view;
-    //ArrayAdapter<String> arrayAdapter;
+    ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, temps);
 
     TextView idText;
     TextView tempText;
@@ -39,6 +40,7 @@ public class EditData extends AppCompatActivity {
     //Stores non-editable ID
     String ID;
 
+    private ListView lv;
 
 
     @Override
@@ -51,8 +53,10 @@ public class EditData extends AppCompatActivity {
         nameText = (EditText) findViewById(R.id.Name);
         ageText = (EditText) findViewById(R.id.Age);
         submitButton = (Button) findViewById(R.id.Submit);
-       // deleteButton = (Button) findViewById(R.id.Delete);
+        //deleteButton = (Button) findViewById(R.id.Delete);
         tempButton = (Button) findViewById(R.id.Photo);
+
+        lv = (ListView) findViewById(R.id.listView);
 
         Intent i = getIntent();
         String value = i.getStringExtra("curr_data");
@@ -72,10 +76,12 @@ public class EditData extends AppCompatActivity {
                         ID = String.valueOf(patient.getId());
                         nameText.setText(patient.getName());
                         ageText.setText(String.valueOf(patient.getAge()));
+                        for(int i = 0; i < 5; ++i) {
+                             temps[i] = patient.recentTemps[i];
+                        }
                         break;
                     }
-
-
+                    lv.setAdapter(arrayAdapter);
                 }
             }
             @Override
@@ -117,7 +123,6 @@ public class EditData extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent i = new Intent(getApplicationContext(), PreviewActivity.class);
-
 
             }
         });

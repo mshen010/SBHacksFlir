@@ -31,7 +31,7 @@ import com.flir.flironeexampleapplication.util.EditData;
 
 public class ViewData extends AppCompatActivity {
 
-    String[] patients = new String[3];
+    String[] patients = new String[2];
 
     ListView patient_view;
     ArrayAdapter<String> arrayAdapter;
@@ -69,7 +69,7 @@ public class ViewData extends AppCompatActivity {
         //Test nodes created
         //users.child("name").setValue("Bob");
         //users.child("age").setValue("15");
-        users.child("id").setValue("0");
+        //users.child("id").setValue("1");
         System.out.println("This should be initialized.");
 
         Firebase list = new Firebase("https://datatemp.firebaseio.com/patients");
@@ -82,10 +82,9 @@ public class ViewData extends AppCompatActivity {
                 {
                     Patient patient = postSnapshot.getValue(Patient.class);
 
-                    patients[index] = patient.getId() + "\n" + patient.getName() + "\n" + patient.getAge();
+                    patients[index] = patient.getId() + "\n" + patient.getName();
                     System.out.println(patients[index]);
                     index++;
-
                 }
                 patient_view.setAdapter(arrayAdapter);
             }

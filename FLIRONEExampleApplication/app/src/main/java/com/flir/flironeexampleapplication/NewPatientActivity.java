@@ -3,6 +3,7 @@ package com.flir.flironeexampleapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -43,28 +44,42 @@ public class NewPatientActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), PreviewActivity.class);
-                startActivity(intent);
+                intent.putExtra("user", user);
+                startActivityForResult(intent, 5);
             }
         });
 
         Submit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Firebase newPatient = new Firebase("https://datatemp.firebaseio.com/" + user.getUID() + "/patients");
+                Firebase newPatient = new Firebase("https://datatemp.firebaseio.com/" + user.getUID() + "/patients/" + user.getNumPatients() + "/");
                 newPatient.child("name").setValue(Name.getText().toString());
                 newPatient.child("gender").setValue(Gender.getText().toString());
                 //TODO: Increment number of patients in User
                 newPatient.child("age").setValue(Age.getText().toString());
-
+                newPatient.child("id").setValue(user.getNumPatients());
                 user.newPatient();
                 Intent resultIntent = new Intent();
                 resultIntent.putExtra("updated_user", user);
                 setResult(RESULT_OK, resultIntent);
 
-
+                finish();
                 Toast.makeText(getApplicationContext(), "Patient created.", Toast.LENGTH_SHORT);
                 //finish();
             }
         });
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        if(resultCode == RESULT_OK)
+        {
+            user = data.getParcelableExtra("updated_user"); //Brought from OTHER activities.
+            Firebase newPatient = new Firebase("https://datatemp.firebaseio.com/" + user.getUID() + "/patients/" + user.getNumPatients() + "/");
+        }
+        else if (resultCode == RESULT_CANCELED){
+            Log.i("Main", "Activity result failed");
+        }
     }
 }

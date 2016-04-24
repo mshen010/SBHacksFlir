@@ -31,7 +31,8 @@ import com.flir.flironeexampleapplication.util.EditData;
 
 public class ViewData extends AppCompatActivity {
 
-    String[] patients = new String[2];
+    Intent i;
+    User user;
 
     ListView patient_view;
     ArrayAdapter<String> arrayAdapter;
@@ -53,26 +54,34 @@ public class ViewData extends AppCompatActivity {
     on a patient's information if you press on it.
 
     Note: We may need some users class to store in the data.
-
     */
+
+    String[] patients;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_data);
+
+        //Set up number of patients
+        i = getIntent();
+        user = i.getParcelableExtra("user");
+        patients = new String[user.getNumPatients()];
+
         //Array adapter set up
         arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1  ,patients);
         //Set up list
         patient_view = (ListView) findViewById(R.id.view);
         //Setup Firebase
         Firebase.setAndroidContext(this);
-        Firebase users = new Firebase("https://datatemp.firebaseio.com/patients/1");
+        //Firebase users = new Firebase("https://datatemp.firebaseio.com/patients/1");
         //Test nodes created
         //users.child("name").setValue("Bob");
         //users.child("age").setValue("15");
         //users.child("id").setValue("1");
         System.out.println("This should be initialized.");
 
-        Firebase list = new Firebase("https://datatemp.firebaseio.com/patients");
+        Firebase list = new Firebase("https://datatemp.firebaseio.com/" + user.getUID() + "/patients/");
         list.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

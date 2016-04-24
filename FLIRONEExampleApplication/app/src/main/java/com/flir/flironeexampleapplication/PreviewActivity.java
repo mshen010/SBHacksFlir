@@ -601,7 +601,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
             }
             imageTypeNames[t.ordinal()] = name;
         }
-        RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.BlendedMSXRGBA8888Image;
+        RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.ThermalRadiometricKelvinImage;
         frameProcessor = new FrameProcessor(this, this, EnumSet.of(defaultImageType));
 
         ListView imageTypeListView = ((ListView)findViewById(R.id.imageTypeListView));
